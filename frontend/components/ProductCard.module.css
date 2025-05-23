@@ -1,0 +1,123 @@
+.card {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 1.5rem;
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: rgba(255, 255, 255, 0.2);
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.header h3 {
+    margin: 0;
+    font-size: 1.25rem;
+    color: #fff;
+}
+
+.price {
+    font-weight: 600;
+    color: #4ade80;
+    font-size: 1.1rem;
+}
+
+.description {
+    color: #94a3b8;
+    margin-bottom: 1.5rem;
+    line-height: 1.5;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 1rem;
+    min-height: 40px;
+}
+
+.stock {
+    color: #e2e8f0;
+    font-size: 0.9rem;
+}
+
+.actions,
+.editStock {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.stockInput {
+    background: rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    width: 80px;
+}
+
+.deleteBtn,
+.updateBtn,
+.saveBtn,
+.cancelBtn,
+.confirmDeleteBtn {
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    font-size: 0.875rem;
+    transition: background 0.2s;
+}
+
+.deleteBtn {
+    background: rgba(239, 68, 68, 0.2);
+    color: #fca5a5;
+}
+
+.deleteBtn:hover {
+    background: rgba(239, 68, 68, 0.3);
+}
+
+.confirmDeleteBtn {
+    background: #ef4444;
+    color: white;
+}
+
+.confirmDeleteBtn:hover {
+    background: #dc2626;
+}
+
+.updateBtn {
+    background: rgba(59, 130, 246, 0.2);
+    color: #93c5fd;
+}
+
+.updateBtn:hover {
+    background: rgba(59, 130, 246, 0.3);
+}
+
+.saveBtn {
+    background: #22c55e;
+    color: white;
+}
+
+.cancelBtn {
+    background: rgba(255, 255, 255, 0.1);
+    color: #e2e8f0;
+}
+
+.cancelBtn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
